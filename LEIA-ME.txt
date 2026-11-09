@@ -1,0 +1,31 @@
+PROTOTIPO2 — ATLYS CONSULTORIA
+
+1. Abra a pasta prototipo2 no VS Code.
+2. Clique em index.html e use Open with Live Server.
+3. Não precisa de npm, Node ou build (HTML + CSS + JavaScript puro).
+
+PÁGINAS
+- index.html: home (header, hero, "Isso parece familiar?", para quem é, portabilidade, serviços, diferenciais,
+  como funciona, A Atlys, equipe, cases, aparelhos em destaque, clientes, contato com mapa, chatbot)
+- aparelhos.html: loja com busca, filtros (marca e GB), carrinho, checkout e pedido por WhatsApp
+- portabilidade.html: página dedicada à portabilidade
+
+ARQUIVOS
+- assets/css/styles.css: design system único
+- assets/js/app.js: menu, intro, animações, formulários, esteira de clientes, destaques e chatbot
+- assets/js/products.js: catálogo dos 22 aparelhos
+- assets/js/store.js: carrinho (localStorage 'atlys-cart'), filtros e checkout
+
+PENDENTE (precisa de internet fora do ambiente de desenvolvimento)
+- As fotos dos aparelhos ainda são links externos (a maioria sem segunda foto). Para ter 2 fotos reais locais por modelo,
+  salve-as em assets/img/phones/ e aponte img e img2 em products.js.
+- Os logos de clientes não têm link para o site oficial (não foi possível confirmar cada site).
+- Avaliações do Google: seção não incluída porque não há avaliações reais confirmadas.
+
+ATUALIZAÇÃO DO CHECKPOINT (14/10/2026)
+- Carrinho/checkout aprimorados para navegação por teclado, foco e recuperação da mensagem do pedido.
+- Sem fotos reais novas; 0 de 22 aparelhos possuem 2 imagens locais verificadas.
+- CHECKPOINT.md e PROGRESSO.md registram o estado do trabalho, testes e pendências.
+- node tests/check_product_images.mjs — inventário das imagens; --strict sinaliza pendências com exit code 1.
+- python tests/smoke_test.py — 32 verificações DOM offline em Chromium (requer Python Playwright).
+- ATLYS_TEST_HTTP=1 python tests/smoke_test.py — modo HTTP em navegador sem bloqueio de navegação.

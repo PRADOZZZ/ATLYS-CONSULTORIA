@@ -1,0 +1,24 @@
+ATLYS / prototipo2 — versão pronta para Vercel
+
+IMPORTANTE:
+- index.html precisa ficar NA RAIZ do projeto.
+- assets/ deve ficar no mesmo nível do index.html.
+- Framework Preset: Other
+- Build Command: deixe vazio
+- Output Directory: deixe vazio
+- Install Command: deixe vazio
+- Root Directory: deixe vazio se estes arquivos estiverem na raiz do repositório.
+
+Se seu GitHub tiver uma pasta externa chamada prototipo2-vercel ou prototipo2 contendo tudo, então no Vercel configure Root Directory para essa pasta.
+
+Forma mais simples em 2026:
+1. Vá a vercel.com/drop
+2. Arraste a PASTA prototipo2-vercel (não o ZIP fechado)
+3. Deploy
+
+Arquivos principais esperados na raiz:
+index.html
+aparelhos.html
+portabilidade.html
+vercel.json
+assets/
